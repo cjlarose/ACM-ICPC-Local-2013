@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
-
+/**
+* Given 2D array, what is the maximum sum over all 2D sub-arrays?
+*
+* @author Chris LaRose
+*/
 public class maxsum {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);

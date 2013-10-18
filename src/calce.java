@@ -1,5 +1,8 @@
 
-
+/**
+* Approximate e using a simple summation.
+* @author Tanner Prynn
+*/
 public class calce {
 
 	public static void main(String[] args) {

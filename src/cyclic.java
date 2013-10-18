@@ -1,11 +1,14 @@
 import java.math.BigInteger;
 import java.util.Scanner;
 
-
+/*
+* Is an integer cyclic?
+* 
+* @author Chris LaRose
+*/
 public class cyclic {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
 
 		while (in.hasNext()) {

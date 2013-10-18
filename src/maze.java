@@ -9,7 +9,10 @@ import java.util.Queue;
 import java.util.Scanner;
 import java.util.Set;
 
-
+/**
+* 
+* @author Chris LaRose
+*/
 public class maze {
 
 	public static void main(String[] args) {

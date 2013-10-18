@@ -1,6 +1,13 @@
 import java.util.Scanner;
 
-
+/**
+* Circularl linked list, each node contains an int 
+* which has half its value moved to the right. 
+* At every turn, if any value is odd, it is incremented. 
+* How many turns until all values are equal?
+*
+* @author Tanner Prynn
+*/
 public class candy {
 
 	public static void main(String[] args) {

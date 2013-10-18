@@ -1,7 +1,11 @@
 import java.math.BigInteger;
 import java.util.Scanner;
 
-
+/**
+* Repeatedly sum digits of an integer.
+*
+* @author Tanner Prynn
+*/
 public class roots {
 
 	public static void main(String[] args) {

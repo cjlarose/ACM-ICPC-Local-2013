@@ -8,10 +8,15 @@ import java.util.Queue;
 import java.util.Scanner;
 import java.util.Set;
 
-
+/**
+* Given a graph, how many disconnected subgraphs 
+* remain when a node is removed?
+*
+* @author Chris LaRose
+* @author Tanner Prynn
+*/
 public class fail {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in); 
 		
 		int i = 1;
