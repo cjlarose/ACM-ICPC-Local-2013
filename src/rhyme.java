@@ -5,22 +5,22 @@ import java.util.HashMap;
 
 public class rhyme {
 
-	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		while (true) {
-			int n = in.nextInt();
-			if (n == 0)
-				break;
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        while (true) {
+            int n = in.nextInt();
+            if (n == 0)
+                break;
 
             if (n == 1) {
-			    System.out.println("1 1");
+                System.out.println("1 1");
                 continue;
             }
-			
+            
             RhymeMaster rm = new RhymeMaster(n);
             System.out.printf(n + " %.0f%n", rm.rhyme());
-		}
-	}
+        }
+    }
 
     public static class RhymeMaster {
 
