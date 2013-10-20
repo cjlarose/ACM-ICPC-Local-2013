@@ -3,6 +3,11 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.HashMap;
 
+/**
+* How many rhyme schemes exist for a poem of n lines?
+*
+* @author Chris LaRose
+*/
 public class rhyme {
 
     public static void main(String[] args) {
