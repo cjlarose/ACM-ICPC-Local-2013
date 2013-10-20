@@ -3,7 +3,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.HashMap;
 
-
 public class rhyme {
 
 	public static void main(String[] args) {
@@ -19,7 +18,7 @@ public class rhyme {
             }
 			
             RhymeMaster rm = new RhymeMaster(n);
-			System.out.println(n + " " + rm.rhyme());
+            System.out.printf(n + " %.0f%n", rm.rhyme());
 		}
 	}
 
@@ -31,12 +30,12 @@ public class rhyme {
             this.n = n;
         }
 
-        public int rhyme() {
+        public double rhyme() {
             Map<Integer, Integer> map = new HashMap<Integer, Integer>();
             map.put(1, 1);
             for (int i = 2; i < n; i++) {
                 map = expand_map(map);
-                print_map(map);
+                //print_map(map);
             }
             return sum(map);
         }
@@ -55,17 +54,18 @@ public class rhyme {
 
         public static void add_value(Map<Integer, Integer> map, int key, int multiplicity) {
             Integer m = map.get(key);
-            if (m == null) {
+            if (m == null)
                 map.put(key, multiplicity);
-            } else {
+            else
                 map.put(key, m + multiplicity);
-            }
         }
 
-        public static int sum(Map<Integer, Integer> map) {
-            int sum = 0;
+        public static double sum(Map<Integer, Integer> map) {
+            double sum = 0;
             for (Entry e : map.entrySet()) {
-                sum += (((Integer) e.getKey()) + 1) * (Integer) e.getValue();
+                double k = (Integer) e.getKey();
+                double v = (Integer) e.getValue();
+                sum += (k + 1) * v;
             }
             return sum;
         }
